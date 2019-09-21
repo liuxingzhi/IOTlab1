@@ -82,6 +82,7 @@ celerybeat-schedule
 *.sage.py
 
 # Environments
+lab1/
 .env
 .venv
 env/
@@ -108,3 +109,11 @@ frozen_ssd_mobilenet/
 
 # pycharm
 .idea/
+
+# images
+*.jpg
+*.png
+*.jpeg
+
+# All test files
+test*
