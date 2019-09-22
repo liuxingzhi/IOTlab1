@@ -5,6 +5,7 @@ import cv2
 from detect import detect
 from typing import List
 import numpy as np
+
 count_img = 1
 
 
@@ -20,12 +21,12 @@ def decode_numpy_array(data):
     arr = np.frombuffer(data, np.uint8)
     img = cv2.imdecode(arr, cv2.IMREAD_COLOR)
     global count_img
-    succ = cv2.imwrite("{count_img}.jpg".format(count_img=count_img), detect(img))
+    succ = cv2.imwrite(os.path.join("data", "{count_img}.jpg").format(count_img=count_img), detect(img))
     print(succ)
     count_img += 1
 
 
-os.system("rm 123.png; touch 123.png")
+os.system("rm -r data; mkdir data")
 # TCP_IP = '10.42.0.1'
 TCP_IP = '127.0.0.1'
 TCP_PORT = 5006
