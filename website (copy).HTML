@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+    <script>
+        window.onload = function () {
+            let i = 1
+            function next_img() {
+                i += 1
+                let img = document.getElementById("detect")
+                img.src = "data/" + i + ".jpg"
+                setTimeout(next_img, 1000)
+            }
+            next_img()
+        }
+    </script>
+</head>
+<body>
+<img id="detect" src="data/1.jpg">
+</body>
+</html>
