@@ -14,7 +14,7 @@ matplotlib==3.1.1
 mkl-fft==1.0.14
 mkl-random==1.0.2
 mkl-service==2.3.0
-numpy==1.16.5
+numpy==1.22.0
 olefile==0.46
 opencv-python==4.1.1.26
 Pillow==6.1.0
